@@ -16,7 +16,7 @@ var (
 )
 
 func main() {
-	client := voicevox.New()
+	client := voicevox.New("http://localhost:50021")
 
 	speakers, err := client.GetSpeakers()
 	if err != nil {
